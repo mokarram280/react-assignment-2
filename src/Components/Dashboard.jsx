@@ -1,9 +1,10 @@
 import React from 'react';
 import { cards } from '../lib/data/chain';
+import { ChatBox } from './ChatBox';
 
 export const Dashboard = () => {
   return (
-    <section className='pt-10 pb-16 px-4 md:px-12 lg:px-16 xl:px-[70px]'>
+    <section className='pt-10 pb-[271px] px-4 md:px-12 lg:px-16 xl:px-[70px]'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
             {cards.map(({img1,img2,title,address,location,amount},i)=>(
                 <div key={i} className='mx-auto'>
@@ -21,8 +22,8 @@ export const Dashboard = () => {
                 </div>
                 </div>
             ))}
-            
-        </div> 
+            <ChatBox />
+        </div>
     </section>
-  )
-}
+  );
+};
