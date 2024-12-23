@@ -1,11 +1,11 @@
 export const navItems = [
     {
       lable: 'Dashboard',
-      link: '#'
+      link: '/dashboard'
     },
     {
       lable: 'Incidents',
-      link: '#'
+      link: '/incidents'
     },
     {
       lable: 'Locations',

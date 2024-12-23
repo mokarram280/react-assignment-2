@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { navItems } from '../lib/data/chain';
+import { Link,Outlet } from 'react-router-dom';
 
 
 const NavbarArea = () => {
@@ -11,15 +12,16 @@ const NavbarArea = () => {
   };
  
   return (
+    <>
     <nav className='px-8 lg:px-12 xl:px-[85.5px] border-b border-b-[#3F3F46] bg-[#E4E4E780]'>
     <div className='flex justify-between items-center py-6 max-w-[1440px] mx-auto text-black'>
       <img src="/logo.svg" alt="Logo" className='w-[131px] h-[36px]' />
 
       <div className='flex items-center justify-center gap-4'>
             {navItems.map(({lable,link},i)=>
-                <a href={link} key={i} className='text-foreground hover:text-gray-800 hover:font-bold transition duration-300'>
+                <Link to={link} key={i} className='text-foreground hover:text-gray-800 hover:font-bold transition duration-300'>
                     <p className='hidden lg:flex'>{lable}</p>
-                </a>
+                </Link>
             )}
       </div>
 
@@ -50,6 +52,8 @@ const NavbarArea = () => {
       </div>
      </div>
     </nav>
+    <Outlet />
+    </>
   );
 };
 
