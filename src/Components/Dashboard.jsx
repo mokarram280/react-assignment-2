@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { cards } from '../lib/data/chain';
 import { ChatBox } from './ChatBox';
+import { Contorl } from '../lib/data/Contorl';
 
 export const Dashboard = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+    const cardOpen = () =>{
+        setIsOpen(!isOpen);
+    };
   return (
-    <section className='pt-10 pb-[271px] px-4 md:px-12 lg:px-16 xl:px-[70px]'>
+    <section className='pt-10 xl:pb-[271px] px-4 md:px-12 lg:px-16 xl:px-[70px]'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
             {cards.map(({img1,img2,title,address,location,amount},i)=>(
                 <div key={i} className='mx-auto'>
@@ -22,7 +28,9 @@ export const Dashboard = () => {
                 </div>
                 </div>
             ))}
-            <ChatBox />
+            <div onClick={cardOpen} className='md:ms-[271px] mx-auto'>
+            {isOpen ? <ChatBox /> : <Contorl /> }
+        </div>   
         </div>
     </section>
   );

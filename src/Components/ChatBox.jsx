@@ -2,10 +2,9 @@ import React from 'react';
 import { CiCamera, CiImageOn } from "react-icons/ci";
 import { GoPaperclip } from "react-icons/go";
 import { GrClose } from "react-icons/gr";
-import { ControlButton } from './ControlButton';
-
 
 export const ChatBox = () => {
+    
   return (
     <section className='bg-[#F4F4F5] h-[550px] w-[331px] rounded-xl relative'>
         <div className='h-[63px] bg-primary rounded-t-xl'>
@@ -28,12 +27,11 @@ export const ChatBox = () => {
             </div>
             <button className='bg-primary text-white py-3 px-6 rounded-full text-[12px]'>Send</button>
         </div>
-        <div className='absolute -bottom-20 right-0 bg-white shadow-lg rounded-full size-16 flex justify-center md:hidden'>
+        <div className='absolute -bottom-20 right-0 bg-white shadow-lg rounded-full size-16 flex justify-center'>
             <button>
                 <GrClose size={30} />
             </button>
         </div>
-        <ControlButton />
     </section>
   )
 }
