@@ -3,7 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 
 export const Header = () => {
   return (
-    <header className='bg-[#E4E4E780] px-8 lg:px-12 xl:px-[86px] font-onest pt-8 pb-[29px]'>
+    <header className='bg-[#E4E4E780] px-8 lg:px-12 xl:px-[86px] pt-8 pb-[29px]'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
       <div>
         <p className='text-[12px] text-secondary'>Welcome back</p>
