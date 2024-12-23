@@ -75,3 +75,21 @@ export const navItems = [
         amount:'$1,456,654.00'
     },
   ];
+
+  export const Start = [
+    {
+      img:'dns1.svg',
+      title:'What type of incident?',
+      text:'Choose the category that best describes the incident.'
+    },
+    {
+      img:'dns2.svg',
+      title:'Tell us about the incident?',
+      text:'Lets connect the dots and see where to start.'
+    },
+    {
+      img:'dns3.svg',
+      title:'Where did the incident occur?',
+      text:'Lorem ipsum dolar sit general sac mascho werho'
+    }
+  ];

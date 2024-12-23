@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosSearch } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 export const Menubar = () => {
   return (
@@ -16,10 +17,12 @@ export const Menubar = () => {
         <p>Search incident</p>
         </div>
         <div className='bg-white py-4 px-[10px] rounded-md text-secondary'><span className='text-foreground'>Sort By:</span> Date modified</div>
+        <Link to='/started'>
         <button className='bg-primary text-white py-4 px-[25px] rounded-md flex items-center gap-2'>
            <FaPlus size={15} />
             New Incident
         </button>
+        </Link>
       </div>
      </div>
     </section>
