@@ -4,7 +4,7 @@ import { FaMoneyBill } from "react-icons/fa6";
 
 export const Country = () => {
   return (
-    <section className='space-y-11'>  
+    <section className='space-y-11 mt-12 lg:mt-0'>  
         <div className='flex items-center gap-4'>
             <div className='bg-[#F4F4F5] text-secondary size-9 flex items-center justify-center rounded-full'>
                 <TiLocation size={20} />
@@ -23,6 +23,7 @@ export const Country = () => {
             <h2 className='text-xl font-bold text-black'>$60,607,456.00</h2>
             </div>
         </div>
+        <div className='border-b border-b-[#E4E4E7]'></div>
     </section>
   );
 };
