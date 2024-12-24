@@ -9,7 +9,7 @@ export const navItems = [
     },
     {
       lable: 'Locations',
-      link: '#'
+      link: '/locations'
     },
     {
       lable: 'Activities',
