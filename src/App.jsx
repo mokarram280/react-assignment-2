@@ -4,6 +4,9 @@ import { Dashboard } from './Components/Dashboard';
 import { Incidents } from './Components/Incidents';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { Started } from './Components/Started';
+import { Describes } from './Components/Describes';
+import { Step4 } from './Components/Step4';
+import { Step5 } from './Components/Step5';
 
 const App = () => {
   return (
@@ -14,6 +17,9 @@ const App = () => {
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/incidents' element={<Incidents />} />
       <Route path='/started' element={<Started />} />
+      <Route path='/describes' element={<Describes />} />
+      <Route path='/step4' element={<Step4 />} />
+      <Route path='/step5' element={<Step5 />} />
       </Route>
     </Routes>
     </BrowserRouter>

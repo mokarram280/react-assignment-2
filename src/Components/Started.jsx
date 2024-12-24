@@ -1,5 +1,6 @@
 import React from 'react';
 import { Start } from '../lib/data/chain';
+import { Link } from 'react-router-dom';
 
 export const Started = () => {
   return (
@@ -18,7 +19,11 @@ export const Started = () => {
                 </div>
             ))}
         </div>
-        <button className='bg-primary text-white text-[12px] font-bold py-4 px-7 rounded-md mt-20'>Get started</button>
+        <Link to='/describes'>
+            <button className='bg-primary text-white text-[12px] font-bold py-4 px-7 rounded-md mt-6 md:mt-12 lg:mt-20'>
+               Get started
+           </button>
+        </Link>
       </div>
     </section>
   )
